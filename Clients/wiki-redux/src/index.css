@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+}
+
+/* input,
+button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+} */
+
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #53565a;
+}
+
+form {
+  display: block;
+  position: relative;
+}
+
+form:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5;
+  left: -5;
+  right: -5;
+  bottom: -5;
+  z-index: 1;
+  background-image: linear-gradient(to bottom right, #ffce00, #fe4880);
+}
+form .form-inner {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  padding: 30px;
+  z-index: 2;
+}
+
+form .form-inner .form-group {
+  display: block;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.form-inner .form-group label {
+  display: block;
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 5px;
+  transition: 0.4s;
+}
+
+.form-inner .form-group:focus-within label {
+  color: #fe4880;
+}
+
+form .form-inner .form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+form .form-inner .form-group input:focus {
+  box-shadow: 0px 0px 3px rgb(0, 0, 0.2);
+}
+form .form-inner .form-group input[type="submit"] {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to right,
+    #ffce00 50%,
+    #ffce00 50%,
+    #fe4880
+  );
+  background-size: 200%;
+  background-position: 0%;
+  transition: 0.4s;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+form .form-inner .form-group input[type="submit"]:hover {
+  background-position: 200% 0%;
+}
+
+
+
+
+
+
+
+/* workspace */
+.Sidebar{
+  height:100%;
+  width: 250px;
+  background-color: darkgrey;
+}
+.SidebarList{
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+.SidebarList .SidebarListRow {
+  height: 40px;   
+  width: 100%;
+
+  list-style-type: none;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.SidebarList .SidebarListRow:hover{
+  cursor: pointer;
+  background-color: dimgray;
+
+}
+.SidebarList .SidebarListRow #isSubscribed{
+  
+  background-color: rgb(53, 7, 7);
+  flex:70%;
+  place-items: center;
+  display: grid;
+
+}
+.SidebarList .SidebarListRow #title{
+  flex:70%;
+  place-items: center;
+  display: grid;
+}
+ #icon{
+  flex-direction: row;
+  flex:30%;
+  place-items: center;
+  display: grid;
+}
+#active{
+  background-color: dimgray;
+}
+#createWorkSpace:hover{
+  cursor: pointer;
+  background-color: dimgray;
+}
+#createWorkSpace{
+  background-color: silver;
+  border: 2px solid dimgray; 
+  flex:70%;
+}
+
+
+
+/* ck-editor */
+.editor{
+  margin-right: 0em;
+  height: 300Px;
+}
+
+.ck-editor __editable_inline{
+max-height: 300px;
+}
+.ck .ck-editor __editable_main{
+  max-height: 300px;
+}
+
+
+#Title {
+  appearance: none;
+  background: none;
+  border:0.5px solid;
+  outline:thin;
+}
